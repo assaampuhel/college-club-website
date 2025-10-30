@@ -1,20 +1,19 @@
-<!-- about.html - About page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#071126" />
-  <title>About • Tech Innovators Club</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • TechNova Club</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <nav class="nav">
-      <a class="nav-left" href="index.html" aria-label="Tech Innovators Club Home">
+      <a href="index.html" class="nav-left" aria-label="Home">
         <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965876.png" alt="logo">
-        <span class="brand">Tech Innovators Club</span>
+        <span class="brand">TechNova Club</span>
       </a>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="about.html">About</a></li>
@@ -22,72 +21,69 @@
         <li><a href="join.html">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburgerAbout" aria-label="Open menu">☰</button>
+
+      <button id="themeToggleAbout" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="hamburgerAbout" class="hamburger" aria-label="Open menu">☰</button>
     </nav>
   </header>
 
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <h1>About Tech Innovators Club</h1>
-      <p class="lead">We inspire students to create, learn, and lead through collaborative tech projects and events.</p>
-    </div>
-  </section>
+  <main>
 
-  <section class="section about-section">
-    <div class="section-inner about-intro">
-      <img class="about-img" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80" alt="club activity">
-      <div class="about-text">
-        <h2>Who we are</h2>
-        <p>Founded in 2017, Tech Innovators Club brings together students from diverse disciplines to solve real problems using technology. We combine workshops, hands-on projects, mentoring and competitions to craft a learning-first environment.</p>
-
-        <h3>Our mission</h3>
-        <p>To empower students with practical skills, mentorship and a collaborative community that encourages experimentation and leadership.</p>
-
-        <h3>What we do</h3>
-        <ul class="activities">
-          <li>💡 Organize hackathons, project expos and ideation sprints.</li>
-          <li>📚 Run workshops on web development, machine learning, cloud and hardware.</li>
-          <li>🤝 Partner with industry for mentorship, internships and talks.</li>
-          <li>🌐 Maintain open-source student projects that impact the campus community.</li>
-        </ul>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <h1 id="typingAbout" class="typing"></h1>
+        <p class="lead">We inspire students to create, learn, and lead through collaborative projects and events.</p>
       </div>
-    </div>
+    </section>
 
-    <h2 style="margin-top:2.5rem;">Meet the core team</h2>
-    <div class="team-grid">
-      <!-- Team member cards -->
-      <div class="team-member">
-        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Riya Sharma">
-        <h4>Riya Sharma</h4>
-        <p class="muted">President</p>
-        <p class="muted small">Focus: AI & Robotics</p>
+    <section class="section about-section">
+      <div class="section-inner about-intro">
+        <img class="about-img" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80" alt="club activities">
+        <div class="about-text">
+          <h2>Who we are</h2>
+          <p>Founded in 2017, TechNova brings students together to solve real problems with technology through workshops, projects, and mentorship.</p>
+
+          <h3>Our mission</h3>
+          <p>To empower students with the skills and community needed to build tech that matters.</p>
+
+          <h3>What we do</h3>
+          <ul class="activities">
+            <li>💡 Hackathons & code sprints</li>
+            <li>📚 Workshops: Web, ML, Embedded</li>
+            <li>🤝 Industry talks & mentorship</li>
+            <li>🌐 Open-source campus projects</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="team-member">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Aditya Kumar">
-        <h4>Aditya Kumar</h4>
-        <p class="muted">Vice President</p>
-        <p class="muted small">Focus: Cloud & DevOps</p>
+      <h2 style="margin-top:2.5rem;">Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Riya">
+          <h4>Riya Sharma</h4>
+          <p class="muted">President</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Aditya">
+          <h4>Aditya Kumar</h4>
+          <p class="muted">Vice President</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha">
+          <h4>Neha Patel</h4>
+          <p class="muted">Event Coordinator</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Rohan">
+          <h4>Rohan Mehta</h4>
+          <p class="muted">PR Head</p>
+        </div>
       </div>
-
-      <div class="team-member">
-        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha Patel">
-        <h4>Neha Patel</h4>
-        <p class="muted">Event Coordinator</p>
-        <p class="muted small">Focus: Event ops & partnerships</p>
-      </div>
-
-      <div class="team-member">
-        <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Rohan Mehta">
-        <h4>Rohan Mehta</h4>
-        <p class="muted">PR Head</p>
-        <p class="muted small">Focus: Outreach & community</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer id="footer" class="footer"></footer>
-
+  <div id="toast" aria-live="assertive"></div>
   <script src="script.js"></script>
 </body>
 </html>

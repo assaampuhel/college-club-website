@@ -1,26 +1,19 @@
-<!-- index.html - Home page for Tech Innovators Club -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#071126" />
-  <title>Tech Innovators Club • Home</title>
-
-  <!-- Link to unified stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechNova Club • Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header / Navigation -->
   <header>
     <nav class="nav">
-      <!-- Club logo on left (external image) -->
-      <a class="nav-left" href="index.html" aria-label="Tech Innovators Club Home">
-        <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965876.png" alt="Tech Innovators Club logo">
-        <span class="brand">Tech Innovators Club</span>
+      <a href="index.html" class="nav-left" aria-label="Home">
+        <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965876.png" alt="TechNova logo">
+        <span class="brand">TechNova Club</span>
       </a>
 
-      <!-- Nav links -->
       <ul class="nav-links">
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -29,59 +22,49 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
-      <!-- mobile menu toggle (progressive enhancement; JS can be added later) -->
-      <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="hamburger" class="hamburger" aria-label="Open menu">☰</button>
     </nav>
   </header>
 
-  <!-- Hero / Masthead -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Empowering Future Innovators</h1>
-      <p class="lead">A student-run community at NITK focusing on AI, Web, Robotics, and hands-on projects. Learn, build, and collaborate with peers and industry mentors.</p>
-      <div class="hero-ctas">
-        <a class="btn primary" href="join.html">Join the Club</a>
-        <a class="btn outline" href="events.html">See Events</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About preview -->
-  <section class="section about-preview">
-    <div class="section-inner">
-      <h2>Who We Are</h2>
-      <p>The Tech Innovators Club is a vibrant student community dedicated to learning, sharing, and building meaningful tech projects. We host workshops, hackathons, and talks all year round.</p>
-      <div class="quick-cards">
-        <div class="card small">
-          <h4>Workshops</h4>
-          <p>Practical sessions on Web, ML, Cloud, and Robotics.</p>
-        </div>
-        <div class="card small">
-          <h4>Hackathons</h4>
-          <p>48-hour collaborative challenges with mentorship & prizes.</p>
-        </div>
-        <div class="card small">
-          <h4>Community</h4>
-          <p>Open projects, study groups, and alumni mentorship.</p>
+  <main>
+    <section class="hero home-hero-bg">
+      <div class="hero-inner">
+        <h1 id="typingHome" class="typing"></h1>
+        <p class="lead">Join us to build projects, attend workshops and compete in hackathons — all in a friendly community.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="join.html">Join the Club</a>
+          <a class="btn outline" href="events.html">See Events</a>
         </div>
       </div>
-      <a class="btn secondary" href="about.html">Learn more about us</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Home events preview (3 items) -->
-  <section class="section home-events">
-    <div class="section-inner">
-      <h2>Upcoming Highlights</h2>
-      <div id="homeEvents" class="events-grid"></div>
-      <a class="btn outline" href="events.html">View all events</a>
-    </div>
-  </section>
+    <section class="section about-preview">
+      <div class="section-inner">
+        <h2>Who We Are</h2>
+        <p>The TechNova Club is a student-run community focused on applied tech learning — AI, Web, Robotics and more.</p>
 
-  <!-- Footer (filled by script.js) -->
+        <div class="quick-cards">
+          <div class="card small"><h4>Workshops</h4><p>Hands-on sessions on modern tech stacks.</p></div>
+          <div class="card small"><h4>Hackathons</h4><p>Team-based challenges and prizes.</p></div>
+          <div class="card small"><h4>Mentorship</h4><p>Industry talks & alumni guidance.</p></div>
+        </div>
+
+        <a class="btn secondary" href="about.html">Learn more</a>
+      </div>
+    </section>
+
+    <section class="section home-events">
+      <div class="section-inner">
+        <h2>Upcoming Highlights</h2>
+        <div id="homeEvents" class="events-grid" aria-live="polite"></div>
+        <a class="btn outline" href="events.html">View all events</a>
+      </div>
+    </section>
+  </main>
+
   <footer id="footer" class="footer"></footer>
-
-  <!-- Main script for dynamic rendering and interactivity -->
+  <div id="toast" aria-live="assertive"></div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,20 +1,19 @@
-<!-- contact.html - contact page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#071126" />
-  <title>Contact • Tech Innovators Club</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • TechNova Club</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <nav class="nav">
-      <a class="nav-left" href="index.html">
+      <a href="index.html" class="nav-left" aria-label="Home">
         <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965876.png" alt="logo">
-        <span class="brand">Tech Innovators Club</span>
+        <span class="brand">TechNova Club</span>
       </a>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -22,37 +21,42 @@
         <li><a href="join.html">Join</a></li>
         <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburgerContact" aria-label="Open menu">☰</button>
+
+      <button id="themeToggleContact" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="hamburgerContact" class="hamburger" aria-label="Open menu">☰</button>
     </nav>
   </header>
 
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <h1>Contact Us</h1>
-      <p class="lead">Questions, sponsorships or collaboration ideas? Reach out — we respond quickly.</p>
-    </div>
-  </section>
-
-  <section class="section contact-section">
-    <div class="section-inner contact-grid">
-      <form class="form-card contact-form" aria-label="Contact form">
-        <input type="text" placeholder="Your name" required>
-        <input type="email" placeholder="Your email" required>
-        <textarea placeholder="Message" rows="5" required></textarea>
-        <button class="btn primary">Send Message</button>
-      </form>
-
-      <div class="contact-info card">
-        <h3>Contact details</h3>
-        <p><strong>Email:</strong> <a class="link" href="mailto:technova@college.edu">technova@college.edu</a></p>
-        <p><strong>Instagram:</strong> <a class="link" href="#">@technova.club</a></p>
-        <p><strong>Address:</strong> NITK Campus, Surathkal, India</p>
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <h1>Contact Us</h1>
+        <p class="lead">Questions, sponsorship or collaboration ideas? Reach out — we respond quickly.</p>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section contact-section">
+      <div class="section-inner contact-grid">
+        <form class="form-card contact-form" aria-label="Contact form">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button class="btn primary" type="button" onclick="showToast('Message sent (demo)', true)">Send Message</button>
+        </form>
+
+        <div class="card contact-info">
+          <h3>Contact details</h3>
+          <p><strong>Email</strong> <br><a class="link" href="mailto:technova@college.edu">technova@college.edu</a></p>
+          <p><strong>Instagram</strong> <br><a class="link" href="#">@technova.club</a></p>
+          <p><strong>Address</strong> <br>NITK Campus, Surathkal, India</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer id="footer" class="footer"></footer>
 
+  <div id="toast" aria-live="assertive"></div>
   <script src="script.js"></script>
 </body>
 </html>
