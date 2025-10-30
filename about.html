@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Innovators Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Innovators Club</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-section">
+    <h2>About the Club</h2>
+    <p>The Innovators Club was founded with the vision of fostering innovation, creativity, and collaboration among students. We aim to build a community where aspiring engineers and tech enthusiasts can learn, share, and grow together.</p>
+    <p>We organize events, workshops, and competitions that allow members to apply their knowledge and gain hands-on experience in real-world projects.</p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Innovators Club | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
