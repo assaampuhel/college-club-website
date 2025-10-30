@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovators Club | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Innovators Club</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Innovators Club</h1>
+      <p>Where creativity meets technology.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We are a community of passionate students exploring technology, innovation, and teamwork. Our club hosts regular workshops, hackathons, and seminars to help students learn and grow together.</p>
+  </section>
+
+  <section class="events">
+    <h2>Upcoming Events</h2>
+    <div class="event-list">
+      <div class="event">
+        <h3>Hackathon 2025</h3>
+        <p>Join our annual 24-hour hackathon and bring your ideas to life!</p>
+      </div>
+      <div class="event">
+        <h3>Tech Talk Series</h3>
+        <p>Learn from industry professionals about AI, Web Dev, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: innovatorsclub@college.edu</p>
+    <p>Follow us on Instagram: @innovators_club</p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Innovators Club | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
