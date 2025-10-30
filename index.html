@@ -1,65 +1,87 @@
+<!-- index.html - Home page for Tech Innovators Club -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Innovators Club | Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#071126" />
+  <title>Tech Innovators Club • Home</title>
+
+  <!-- Link to unified stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Header / Navigation -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Innovators Club</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+    <nav class="nav">
+      <!-- Club logo on left (external image) -->
+      <a class="nav-left" href="index.html" aria-label="Tech Innovators Club Home">
+        <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965876.png" alt="Tech Innovators Club logo">
+        <span class="brand">Tech Innovators Club</span>
+      </a>
+
+      <!-- Nav links -->
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+      <!-- mobile menu toggle (progressive enhancement; JS can be added later) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
     </nav>
   </header>
 
+  <!-- Hero / Masthead -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to the Innovators Club</h1>
-      <p>Empowering students to turn ideas into impact.</p>
-      <a href="#join" class="btn">Join the Club</a>
+    <div class="hero-inner">
+      <h1>Empowering Future Innovators</h1>
+      <p class="lead">A student-run community at NITK focusing on AI, Web, Robotics, and hands-on projects. Learn, build, and collaborate with peers and industry mentors.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="join.html">Join the Club</a>
+        <a class="btn outline" href="events.html">See Events</a>
+      </div>
     </div>
   </section>
 
-  <section class="about">
-    <h2>About Us</h2>
-    <p>
-      The Innovators Club is a student-led organization dedicated to nurturing creativity,
-      teamwork, and problem-solving. We host hackathons, workshops, and tech events to help
-      students explore the latest innovations in AI, Robotics, and Software Engineering.
-    </p>
-    <p>
-      Our mission is to bridge the gap between classroom learning and real-world experience by
-      encouraging collaboration, innovation, and leadership.
-    </p>
+  <!-- About preview -->
+  <section class="section about-preview">
+    <div class="section-inner">
+      <h2>Who We Are</h2>
+      <p>The Tech Innovators Club is a vibrant student community dedicated to learning, sharing, and building meaningful tech projects. We host workshops, hackathons, and talks all year round.</p>
+      <div class="quick-cards">
+        <div class="card small">
+          <h4>Workshops</h4>
+          <p>Practical sessions on Web, ML, Cloud, and Robotics.</p>
+        </div>
+        <div class="card small">
+          <h4>Hackathons</h4>
+          <p>48-hour collaborative challenges with mentorship & prizes.</p>
+        </div>
+        <div class="card small">
+          <h4>Community</h4>
+          <p>Open projects, study groups, and alumni mentorship.</p>
+        </div>
+      </div>
+      <a class="btn secondary" href="about.html">Learn more about us</a>
+    </div>
   </section>
 
-  <section class="events">
-    <h2>Upcoming Events</h2>
-    <div id="event-container" class="event-list"></div>
+  <!-- Home events preview (3 items) -->
+  <section class="section home-events">
+    <div class="section-inner">
+      <h2>Upcoming Highlights</h2>
+      <div id="homeEvents" class="events-grid"></div>
+      <a class="btn outline" href="events.html">View all events</a>
+    </div>
   </section>
 
-  <section class="join" id="join">
-    <h2>Join the Club</h2>
-    <form id="joinForm">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <button type="submit" class="btn">Submit</button>
-      <p id="formMessage" class="success-message"></p>
-    </form>
-  </section>
+  <!-- Footer (filled by script.js) -->
+  <footer id="footer" class="footer"></footer>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Innovators Club | All Rights Reserved</p>
-  </footer>
-
+  <!-- Main script for dynamic rendering and interactivity -->
   <script src="script.js"></script>
 </body>
 </html>

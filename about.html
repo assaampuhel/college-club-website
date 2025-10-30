@@ -1,47 +1,92 @@
+<!-- about.html - About page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Innovators Club</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#071126" />
+  <title>About • Tech Innovators Club</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo">Innovators Club</div>
-      <ul class="nav-links" id="nav-links">
+    <nav class="nav">
+      <a class="nav-left" href="index.html" aria-label="Tech Innovators Club Home">
+        <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965876.png" alt="logo">
+        <span class="brand">Tech Innovators Club</span>
+      </a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a class="active" href="about.html">About</a></li>
         <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <button class="hamburger" id="hamburgerAbout" aria-label="Open menu">☰</button>
     </nav>
   </header>
 
-  <section class="page-section">
-    <h2>About the Innovators Club</h2>
-    <p>
-      Established in 2018, the Innovators Club provides a platform for students to explore technology
-      and creativity beyond academics. Our members come from diverse backgrounds including Computer
-      Science, Electronics, and Mechanical Engineering, united by a shared passion for innovation.
-    </p>
-    <p>
-      We organize interactive sessions, coding challenges, and community projects to inspire students
-      to create meaningful solutions for modern-day problems.
-    </p>
-    <h3>Our Values</h3>
-    <ul class="values">
-      <li>💡 Innovation – Encouraging out-of-the-box thinking</li>
-      <li>🤝 Collaboration – Working together across disciplines</li>
-      <li>🚀 Growth – Focusing on personal and professional development</li>
-    </ul>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>About Tech Innovators Club</h1>
+      <p class="lead">We inspire students to create, learn, and lead through collaborative tech projects and events.</p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Innovators Club | All Rights Reserved</p>
-  </footer>
+  <section class="section about-section">
+    <div class="section-inner about-intro">
+      <img class="about-img" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80" alt="club activity">
+      <div class="about-text">
+        <h2>Who we are</h2>
+        <p>Founded in 2017, Tech Innovators Club brings together students from diverse disciplines to solve real problems using technology. We combine workshops, hands-on projects, mentoring and competitions to craft a learning-first environment.</p>
+
+        <h3>Our mission</h3>
+        <p>To empower students with practical skills, mentorship and a collaborative community that encourages experimentation and leadership.</p>
+
+        <h3>What we do</h3>
+        <ul class="activities">
+          <li>💡 Organize hackathons, project expos and ideation sprints.</li>
+          <li>📚 Run workshops on web development, machine learning, cloud and hardware.</li>
+          <li>🤝 Partner with industry for mentorship, internships and talks.</li>
+          <li>🌐 Maintain open-source student projects that impact the campus community.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:2.5rem;">Meet the core team</h2>
+    <div class="team-grid">
+      <!-- Team member cards -->
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Riya Sharma">
+        <h4>Riya Sharma</h4>
+        <p class="muted">President</p>
+        <p class="muted small">Focus: AI & Robotics</p>
+      </div>
+
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Aditya Kumar">
+        <h4>Aditya Kumar</h4>
+        <p class="muted">Vice President</p>
+        <p class="muted small">Focus: Cloud & DevOps</p>
+      </div>
+
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha Patel">
+        <h4>Neha Patel</h4>
+        <p class="muted">Event Coordinator</p>
+        <p class="muted small">Focus: Event ops & partnerships</p>
+      </div>
+
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Rohan Mehta">
+        <h4>Rohan Mehta</h4>
+        <p class="muted">PR Head</p>
+        <p class="muted small">Focus: Outreach & community</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer"></footer>
 
   <script src="script.js"></script>
 </body>

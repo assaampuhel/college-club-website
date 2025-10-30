@@ -1,0 +1,64 @@
+<!-- join.html - join the club form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#071126" />
+  <title>Join • Tech Innovators Club</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="nav-left" href="index.html">
+        <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965876.png" alt="logo">
+        <span class="brand">Tech Innovators Club</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a class="active" href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburgerJoin" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Become a Member</h1>
+      <p class="lead">Fill the quick form below — we’ll reach out with next steps and upcoming onboarding sessions.</p>
+    </div>
+  </section>
+
+  <section class="section join-section">
+    <div class="section-inner">
+      <form id="joinForm" class="form-card" aria-label="Join Tech Innovators Club">
+        <!-- Name input -->
+        <label class="visually-hidden" for="name">Full name</label>
+        <input id="name" type="text" placeholder="Full name" required>
+
+        <!-- Email input -->
+        <label class="visually-hidden" for="email">Email</label>
+        <input id="email" type="email" placeholder="Email address" required>
+
+        <!-- Optional field: area of interest -->
+        <label class="visually-hidden" for="interest">Interest</label>
+        <input id="interest" type="text" placeholder="Area of interest (e.g., AI, Web, Robotics)">
+
+        <!-- Submit -->
+        <button type="submit" class="btn primary">Join Now</button>
+
+        <!-- feedback -->
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer"></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

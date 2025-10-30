@@ -1,39 +1,57 @@
+<!-- contact.html - contact page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Innovators Club</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#071126" />
+  <title>Contact • Tech Innovators Club</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo">Innovators Club</div>
-      <ul class="nav-links" id="nav-links">
+    <nav class="nav">
+      <a class="nav-left" href="index.html">
+        <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965876.png" alt="logo">
+        <span class="brand">Tech Innovators Club</span>
+      </a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <button class="hamburger" id="hamburgerContact" aria-label="Open menu">☰</button>
     </nav>
   </header>
 
-  <section class="page-section contact-page">
-    <h2>Contact Us</h2>
-    <p>Have questions, ideas, or feedback? We’d love to hear from you!</p>
-
-    <div class="contact-info">
-      <p><strong>Email:</strong> innovatorsclub@college.edu</p>
-      <p><strong>Instagram:</strong> @innovators_club</p>
-      <p><strong>Address:</strong> NITK Campus, Surathkal, India</p>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Contact Us</h1>
+      <p class="lead">Questions, sponsorships or collaboration ideas? Reach out — we respond quickly.</p>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Innovators Club | All Rights Reserved</p>
-  </footer>
+  <section class="section contact-section">
+    <div class="section-inner contact-grid">
+      <form class="form-card contact-form" aria-label="Contact form">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button class="btn primary">Send Message</button>
+      </form>
+
+      <div class="contact-info card">
+        <h3>Contact details</h3>
+        <p><strong>Email:</strong> <a class="link" href="mailto:technova@college.edu">technova@college.edu</a></p>
+        <p><strong>Instagram:</strong> <a class="link" href="#">@technova.club</a></p>
+        <p><strong>Address:</strong> NITK Campus, Surathkal, India</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer"></footer>
 
   <script src="script.js"></script>
 </body>
