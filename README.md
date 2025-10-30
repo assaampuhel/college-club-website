@@ -136,14 +136,6 @@ TechNova-Club/
 
 ---
 
-## 👨‍💻 Author
-
-**Asaph Samuel**  
-Front-End Developer & Computer Science Student  
-[LinkedIn](https://linkedin.com) • [GitHub](https://github.com)
-
----
-
 ## 📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
